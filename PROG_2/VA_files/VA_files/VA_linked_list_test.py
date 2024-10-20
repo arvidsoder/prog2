@@ -5,8 +5,8 @@ Unittests for the binary search tree methods
 
 import unittest
 
-from bst import *
-from linked_list import *
+from VA_bst import *
+from VA_linked_list import *
 
 
 class Test(unittest.TestCase):

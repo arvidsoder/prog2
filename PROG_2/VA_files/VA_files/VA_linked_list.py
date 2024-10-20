@@ -48,8 +48,11 @@ class LinkedList:
             if f:
                 print(', ', end='')
         print(')')
-
-
+    def __str__(self):
+        result = ""
+        for i in self:
+            result += str(i) + ", "
+        return "(" + result[0:-2] + ")"
 class Person:                
     def __init__(self, name, pnr):
         self.name = name

@@ -1,6 +1,5 @@
-# Makefile for MA4
 all:
-	g++ -std=c++11 -c -fPIC person.cpp -o person.o
-	g++ -std=c++11 -shared -o libperson.so  person.o	
+g++ -std=c++11 -c -fPIC fibonacci.cpp -o fibo.o
+g++ -std=c++11 -shared -o libfibo.so  fibo.o	
 clean:
-	rm -fr *.o *.so __pycache__
+rm -fr *.o *.so __pycache__
